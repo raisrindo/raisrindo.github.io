@@ -1,0 +1,51 @@
+.bg-primary {
+  background-color: #055670!important;
+}
+
+hr.star-light:after {
+  color: #fff;
+  background-color: #055670;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #a2bdc6;
+}
+
+a {
+  color: rgba(5,86,112,0.79);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #055670;
+  border-color: #055670;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #033b4d;
+  border-color: #033b4d;
+}
+
+a:hover {
+  color: rgba(5,86,112,0.79);
+  text-decoration: underline;
+}
+
+a:active, a:focus, a:hover {
+  color: rgba(5,86,112,0.79);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #022e3d;
+  border-color: #022e3d;
+}
+
+.btn-primary {
+  background-color: #055670;
+  border-color: #055670;
+}
+
+
+
+
