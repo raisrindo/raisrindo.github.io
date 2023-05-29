@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+#title {
+    margin-top: 10vh;
+}
+
+#game {
+    height: 400px;
+    width: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+#road {
+    height: 30px;
+    width: 800px;
+    position: absolute;
+    bottom: 0;
+}
+
+#road img {
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+    animation: none;
+}
+
+@keyframes roadAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+
+#cloud {
+    height: 80px;
+    width: 800px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#cloud img {
+    height: 80px;
+    width: 2000px;
+    position: absolute;
+    left: -2000px;
+}
+
+@keyframes cloudAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -1000px;
+    }
+}
+
+#score {
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+#tree {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 28px;
+    left: 100px;
+}
+
+#tree img {
+    height: 70px;
+    width: 70px;
+}
+
+.treeActive {
+    animation: animatetree 0.5s linear infinite;
+}
+
+@keyframes animatetree {
+
+    0%,
+    100% {
+        bottom: 28px;
+    }
+
+    45%,
+    55% {
+        bottom: 160px;
+    }
+}
+
+#enemy {
+    height: 80px;
+    width: 125px;
+    position: absolute;
+    bottom: 28px;
+    right: 0px;
+}
+
+#enemy img {
+    height: 80px;
+    width: 125px;
+}
+
+.enemyActive {
+    animation: enemyAnimate 1500ms linear infinite;
+}
+
+@keyframes enemyAnimate {
+    0% {
+        right: -125px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+#instruction {
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 170px);
+    top: calc(50% - 100px);
+    width: 362px;
+    height: 80px;
+    color: #525252;
+}
+
+#gameOver {
+    display: none;
+    text-align: center;
+    position: absolute;
+    left: calc(50% - 170px);
+    top: calc(50% - 100px);
+    width: 362px;
+    height: 80px;
+    color: #525252;
+}
+
+#btns {
+    margin-top: 5vh;
+    position: relative;
+
+}
+
+#start,
+#up {
+    background-color: none;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    /* cursor: pointer; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+}
+
+#start {
+    margin-right: 40px;
+    height: 100px;
+    width: 100px;
+
+}
+
+#start:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.startimg {
+    height: 100px;
+    width: 100px;
+}
+
+#up {
+    margin-left: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+#up:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.upimg {
+    height: 100px;
+    width: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #start {
+        margin-right: 60px;
+    }
+
+    #up {
+        margin-left: 60px;
+    }
+
+
+    #start,
+    .startimg {
+        height: 200px;
+        width: 200px;
+    }
+
+    #up,
+    .upimg {
+        height: 200px;
+        width: 200px;
+
+    }
+
+}

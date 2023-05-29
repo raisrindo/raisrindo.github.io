@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YBPELZTBGR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YBPELZTBGR');
+</script>
+    
+    <meta charset="UTF-8">
+    <title>Pohon Kabur</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+
+<body>
+    <div id="title">
+        <h1>ANDAI POHON BISA KABUR !</h1>
+    </div>
+
+    <div id="game">
+        <audio src="assets/run.wav" autoplay id="starting"></audio>
+
+        <div id="score">My Score : <b>0</b></div>
+
+        <div id="instruction">
+            <h3>Cara Main</h3> <br>
+            <h4>Gunakan tombol "Start" untuk memulai game</h4>
+            <h4>Gunakan tombol "Jump" untuk melompat</h4> <br>
+
+        </div>
+
+        <div id="cloud">
+            <img src="assets/cloud.png" alt="cloud">
+        </div>
+
+        <div id="road">
+            <img src="assets/road.png" alt="road">
+        </div>
+
+        <div id="tree">
+            <img src="assets/tree.png" alt="tree">
+            <audio src="assets/jump.wav" autoplay id="upup"></audio>
+        </div>
+
+        <div id="enemy">
+            <img src="assets/enemy.png" alt="enemys">
+        </div>
+
+        <div id="gameOver">
+            <h3>Game Over</h3> <br>
+            <p>Sepandai-pandai Pohon Kabur, <br>Manusia lebih SUPERIOR</p> <br>
+            <h4>Jadilah Manusia Bijak !</h4> <br>
+            <h5>AYO PEDULI LINGKUNGAN !</h5> <br>
+            <h6>tekan tombol "Start" untuk memulai lagi</h6>
+
+            <audio src="assets/crash.wav" autoplay id="crashing"></audio>
+            <!-- <audio src="assets/crash.wav" autoplay controls id="crashing"></audio> -->
+            <!-- <embed src="assets/crash.wav" autostart=false loop=false> -->
+        </div>
+
+    </div>
+
+    <div id="btns">
+        <button id="start">
+            <!-- <button id="start" onmousedown="run.play()"> -->
+            <img src="assets/start.png" alt="start" class="startimg">
+        </button>
+        <button id="up">
+            <!-- <button id="up" onmousedown="jumping.play()"> -->
+            <img src="assets/up.png" alt="up" class="upimg">
+        </button>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
